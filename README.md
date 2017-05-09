@@ -27,6 +27,8 @@ link</a>.
 ```
 
 
+---
+
 
 ```
 <string name="from_html_text">
@@ -41,6 +43,7 @@ link</a>.
 </string>
 ```
 
+---
 
 
 ```
@@ -49,7 +52,9 @@ textView.setMovementMethod(
     LinkMovementMethod.getInstance());
 textView.setText(Html.fromHtml(
     html, new ResourceImageGetter(this), null));
-    ```
+```
+
+---
     
     
     
@@ -70,15 +75,15 @@ private static class ResourceImageGetter
 }
 ```
 
-
+---
 
 ____________________________________________
 
-
+---
 
 ![alt text](https://raw.githubusercontent.com/SamiMohsin/snip/master/fraction_equation.png)
 
-
+---
 
 ```
 @TargetApi(LOLLIPOP)
@@ -90,7 +95,7 @@ ____________________________________________
 </string>
 ```
 
-
+---
 
 
 ```
@@ -99,9 +104,11 @@ String html = getString(
 textView.setText(Html.fromHtml(
     html, null,
     new FractionTagHandler()))
-    ```
-    
-    
+```
+   
+   
+
+---    
     
     
     
@@ -126,6 +133,7 @@ private static class FractionTagHandler implements Html.TagHandler {
 ```
 
 
+---
 
 
 
@@ -144,6 +152,10 @@ private Object getLast(Editable text, Class kind) {
 
 
 
+---
+
+
+
 
 ```
 private static class FractionSpan extends MetricAffectingSpan {
@@ -158,7 +170,13 @@ private static class FractionSpan extends MetricAffectingSpan {
 
 
 
+---
+
+
 ##### Styled string
+
+---
+
 
 
 
@@ -179,6 +197,10 @@ static SpannableString formatString(
 
 
 
+---
+
+
+
 
 ```
 SpannableStringBuilder builder
@@ -194,7 +216,12 @@ SpannableStringBuilder builder
   .append(formatString(
       this, R.string.small_blue,
       R.style.SmallBlueTextAppearance));
-      ```
+```
+
+
+
+
+---
       
       
      
@@ -205,26 +232,41 @@ SpannableStringBuilder builder
  textView.setText(
   builder.subSequence(
     0, builder.length()));
-    ```
-    
-    
-    
-    
 ```
-<style name="BigRedTextAppearance"
+
+
+
+
+
+---
+
+
+
+    
+    
+    
+    
+```<style name="BigRedTextAppearance"
     parent="@android:style/TextAppearance">
   <item name="android:textSize">
     56sp</item>
   <item name="android:textColor">
     #c00</item>
-</style>
-```
+</style>```
+
+
+
+
+---
+
+
+---
 
 
 
 ##### AlignmentSpan
 
-
+---
 
 
 ```
@@ -240,6 +282,12 @@ public void click(View button) {
   editText.setText(null);
 }
 ```
+
+
+
+
+
+---
 
 
 
@@ -264,14 +312,24 @@ private void appendText(
 
 
 
+---
+
+---
+
+---
 
 
 
 ##### Animated rainbow span
 
+---
 
 
 ![alt text](https://raw.githubusercontent.com/SamiMohsin/snip/master/animated_rainbow.gif)
+
+
+---
+
 
 
 
@@ -304,6 +362,16 @@ objectAnimator.start();
 
 
 
+---
+
+
+
+
+
+
+
+
+
 ```
 private static final 
   Property<AnimatedColorSpan, Float>
@@ -324,6 +392,13 @@ private static final
 
 
 
+---
+
+
+
+
+
+
 
 ```
 public void setTranslateXPercentage(
@@ -334,6 +409,11 @@ public float getTranslateXPercentage() {
   return translateXPercentage;
 }
 ```
+
+
+
+
+---
 
 
 
@@ -361,11 +441,20 @@ public void updateDrawState(
 
 
 
+---
+
+
+
 
 ##### ClickableSpan
+---
 
 
 ![alt text](https://raw.githubusercontent.com/SamiMohsin/snip/master/clickable_span.gif)
+
+
+---
+
 
 
 
@@ -387,6 +476,16 @@ textView.setMovementMethod(new LinkMovementMethod());
 
 
 
+
+---
+
+
+
+
+
+
+
+
 ```
 private static class GoToSettingsSpan extends ClickableSpan {
   public void onClick(View view) {
@@ -400,6 +499,16 @@ private static class GoToSettingsSpan extends ClickableSpan {
 
 
 
+
+---
+
+
+
+
+
+
+
+
 ```
 <TextView
   android:layout_width="match_parent"
@@ -407,11 +516,19 @@ private static class GoToSettingsSpan extends ClickableSpan {
   android:text="@string/clickable_span_text"
   android:textColorLink="@color/go_to_settings"
   android:textColorHighlight="@color/light_green"/>
-  ```
+```
+
+
+
+
+---
   
   
   
   ##### Lined paper
+  
+  
+  ---
   
   
   
@@ -419,8 +536,13 @@ private static class GoToSettingsSpan extends ClickableSpan {
   ![alt text](https://raw.githubusercontent.com/SamiMohsin/snip/master/lined_paper.gif)
   
   
-  ```
-  public class LinedEditText 
+  
+  ---
+  
+  
+  
+```
+ public class LinedEditText 
     extends EditText {
   private void init() {
     this.paint = new Paint();
@@ -434,6 +556,16 @@ private static class GoToSettingsSpan extends ClickableSpan {
   }
 }
 ```
+
+
+
+
+
+---
+
+
+
+
 
 
 
@@ -459,16 +591,49 @@ protected void onDraw(Canvas canvas) {
 
 
 
-###### Emoji && Unicode with system font
+---
 
+
+
+
+###### Emoji && Unicode with system font
+---
 
 ![alt text](https://raw.githubusercontent.com/SamiMohsin/snip/master/emoji_raw.png)
 
+
+---
+
+
+
 ![alt text](https://raw.githubusercontent.com/SamiMohsin/snip/master/emoji.png)
+
+
+
+---
+
+
+
 
 ![alt text](https://raw.githubusercontent.com/SamiMohsin/snip/master/emoji_raw_galaxy_nexus.png)
 
+
+
+---
+
+
+
+
 ![alt text](https://raw.githubusercontent.com/SamiMohsin/snip/master/emoji_raw (1).png)
+
+
+
+---
+
+
+
+
+
 
 
 ```
@@ -487,6 +652,17 @@ while (matcher.find()) {
     matcher.start(), matcher.end(), 0);
 }
 ```
+
+
+
+
+
+---
+
+
+
+
+
 
 
 
@@ -515,25 +691,14 @@ private static class IconFontSpan
 
 
 
-```
-Pattern pattern = Pattern.compile(":octopus:");
-Matcher matcher = pattern.matcher(text);
-Bitmap octopus = null;
-int size = (int) (-textView.getPaint().ascent());
-while (matcher.find()) {
-  if (octopus == null) {
-    Bitmap bitmap = BitmapFactory.decodeResource(
-        getResources(), R.drawable.octopus);
-    octopus = Bitmap.createScaledBitmap(
-        bitmap, size, size, true);
-    bitmap.recycle();
-  }
-  ImageSpan span = new ImageSpan(
-      this, octopus, ImageSpan.ALIGN_BASELINE);
-  spannableString.setSpan(
-      span, matcher.start(), matcher.end(), 0);
-}
-```
+
+
+---
+
+
+
+
+
 
 
 
@@ -557,6 +722,57 @@ while (matcher.find()) {
       span, matcher.start(), matcher.end(), 0);
 }
 ```
+
+
+
+
+
+
+
+
+
+---
+
+
+
+
+
+
+
+
+
+```
+Pattern pattern = Pattern.compile(":octopus:");
+Matcher matcher = pattern.matcher(text);
+Bitmap octopus = null;
+int size = (int) (-textView.getPaint().ascent());
+while (matcher.find()) {
+  if (octopus == null) {
+    Bitmap bitmap = BitmapFactory.decodeResource(
+        getResources(), R.drawable.octopus);
+    octopus = Bitmap.createScaledBitmap(
+        bitmap, size, size, true);
+    bitmap.recycle();
+  }
+  ImageSpan span = new ImageSpan(
+      this, octopus, ImageSpan.ALIGN_BASELINE);
+  spannableString.setSpan(
+      span, matcher.start(), matcher.end(), 0);
+}
+```
+
+
+
+
+
+
+
+---
+
+
+
+
+
 
 
 
@@ -580,6 +796,23 @@ while (matcher.find()) {
 
 
 
+
+
+
+
+
+
+
+---
+
+
+
+
+
+
+
+
+
 ```
 private static class SpeedSignDrawable 
     extends Drawable {
@@ -596,7 +829,23 @@ private static class SpeedSignDrawable
     int size = (int) -ascent;
     this.setBounds(0, 0, size, size);
   }
-  ```
+```
+
+
+
+
+
+
+
+
+
+
+
+---
+
+
+
+
   
   
   
@@ -623,6 +872,24 @@ private void drawYellowCircle(Canvas canvas) {
 
 
 
+
+
+
+
+
+
+
+---
+
+
+
+
+
+
+
+
+
+
 ```
 private void drawRedRing(Canvas canvas) {
   Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -634,6 +901,25 @@ private void drawRedRing(Canvas canvas) {
     size/2, size/2, size/2 - ringWidth/2, paint);
 }
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+
+
+
+
+
 
 
 
@@ -656,6 +942,19 @@ private void drawBlackNumber(Canvas canvas) {
   canvas.drawText(number, x, y, paint);
 }
 ```
+
+
+
+
+
+
+
+
+
+---
+
+
+
 
 
 
