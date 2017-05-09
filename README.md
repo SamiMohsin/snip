@@ -175,6 +175,10 @@ private static class FractionSpan extends MetricAffectingSpan {
 
 ##### Styled string
 
+
+
+
+
 ---
 
 
@@ -197,7 +201,20 @@ static SpannableString formatString(
 
 
 
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
 
 
 
@@ -221,7 +238,22 @@ SpannableStringBuilder builder
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 ---
+
+
+
+
       
       
      
@@ -238,7 +270,23 @@ SpannableStringBuilder builder
 
 
 
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
 
 
 
@@ -252,7 +300,20 @@ SpannableStringBuilder builder
     56sp</item>
   <item name="android:textColor">
     #c00</item>
-</style>```
+</style>
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -260,13 +321,29 @@ SpannableStringBuilder builder
 ---
 
 
+
 ---
+
+
+
+
+
 
 
 
 ##### AlignmentSpan
 
+
+
 ---
+
+
+
+
+
+
+
+
 
 
 ```
@@ -287,7 +364,32 @@ public void click(View button) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -312,23 +414,77 @@ private void appendText(
 
 
 
----
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 
 ---
+
+---
+
+
+
+
+
+
+
+
+
+
 
 
 
 ##### Animated rainbow span
 
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
 
 
 ![alt text](https://raw.githubusercontent.com/SamiMohsin/snip/master/animated_rainbow.gif)
 
 
+
+
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
 
 
 
@@ -362,7 +518,38 @@ objectAnimator.start();
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -392,7 +579,38 @@ private static final
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -413,7 +631,32 @@ public float getTranslateXPercentage() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -441,19 +684,64 @@ public void updateDrawState(
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 ##### ClickableSpan
+
+
+
+
+
+
+
+
 ---
+
+
 
 
 ![alt text](https://raw.githubusercontent.com/SamiMohsin/snip/master/clickable_span.gif)
 
 
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
 
 
 
@@ -477,7 +765,28 @@ textView.setMovementMethod(new LinkMovementMethod());
 
 
 
+
+
+
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -500,7 +809,33 @@ private static class GoToSettingsSpan extends ClickableSpan {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -521,14 +856,66 @@ private static class GoToSettingsSpan extends ClickableSpan {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   
   
   ##### Lined paper
   
   
-  ---
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+---
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -537,7 +924,22 @@ private static class GoToSettingsSpan extends ClickableSpan {
   
   
   
-  ---
+  
+  
+  
+  
+  
+  
+  
+---
+
+
+
+
+
+
+
+
   
   
   
@@ -561,7 +963,37 @@ private static class GoToSettingsSpan extends ClickableSpan {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -591,13 +1023,61 @@ protected void onDraw(Canvas canvas) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 ###### Emoji && Unicode with system font
+
+
+
+
+
+
+
 ---
+
+
+
 
 ![alt text](https://raw.githubusercontent.com/SamiMohsin/snip/master/emoji_raw.png)
 
@@ -606,11 +1086,40 @@ protected void onDraw(Canvas canvas) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 ![alt text](https://raw.githubusercontent.com/SamiMohsin/snip/master/emoji.png)
 
 
 
+
+
+
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
 
 
 
@@ -619,7 +1128,26 @@ protected void onDraw(Canvas canvas) {
 
 
 
+
+
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -628,7 +1156,31 @@ protected void onDraw(Canvas canvas) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -657,7 +1209,48 @@ while (matcher.find()) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -693,7 +1286,36 @@ private static class IconFontSpan
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -731,7 +1353,41 @@ while (matcher.find()) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -767,7 +1423,43 @@ while (matcher.find()) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -803,7 +1495,43 @@ while (matcher.find()) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -841,7 +1569,49 @@ private static class SpeedSignDrawable
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -879,7 +1649,44 @@ private void drawYellowCircle(Canvas canvas) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -913,7 +1720,41 @@ private void drawRedRing(Canvas canvas) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -951,7 +1792,35 @@ private void drawBlackNumber(Canvas canvas) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
+
+
+
+
+
+
+
+
+
 
 
 
